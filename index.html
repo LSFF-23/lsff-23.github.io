@@ -4,14 +4,17 @@
         <title>Teste Técnico</title>
         <style>
             body {
+                font-size: 16px;
                 font-family: Arial, sans-serif;
-                background-color: #1e1e1e;
-                color: #f0f0f0;
+                background-color: #1e1e1e; 
+                color: #f0f0f0; 
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 20px; 
                 min-height: 100vh;
                 margin: 0;
+                box-sizing: border-box;
             }
 
             ul {
@@ -25,11 +28,15 @@
                 margin-bottom: 15px;
             }
 
+            li:first-child {
+                margin-bottom: 2rem;
+            }
+
             a {
                 text-decoration: none;
                 display: block;
                 padding: 15px 20px;
-                background-color: #009688;
+                background-color: #009688; 
                 color: #ffffff;
                 border-radius: 8px;
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -44,6 +51,28 @@
                 transform: translateY(-2px);
                 box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
                 border-color: #38ef7d;
+            }
+
+            @media screen and (max-width: 650px) {
+                body {
+                    min-height: initial; 
+                    padding: 10px;
+                }
+                
+                ul {
+                    width: 100%;
+                }
+
+                a {
+                    padding: 12px 15px;
+                    font-size: 0.95em;
+                    border-radius: 5px; 
+                }
+                
+                a:hover {
+                    transform: none; 
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+                }
             }
         </style>
     </head>
